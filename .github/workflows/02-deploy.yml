@@ -145,7 +145,7 @@ jobs:
 
             "$APP_DIR/venv/bin/pip" install -q -r "$REL/requirements.txt"
             export FLASK_SKIP_DOTENV=1
-            cd "$REL" && "$APP_DIR/venv/bin/flask" db upgrade
+            cd "$REL" && sudo -u flaskapp "$APP_DIR/venv/bin/flask" db upgrade
 
   deploy:
     name: Deploy
