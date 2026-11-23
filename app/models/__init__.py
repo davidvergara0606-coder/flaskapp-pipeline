@@ -1,0 +1,11 @@
+# flake8: noqa
+from app.database.database import db
+from app.models.alerta import Alerta
+from app.models.categoria import Categoria
+from app.models.devolucion import Devolucion
+from app.models.garantia import Garantia
+from app.models.movimiento import Movimiento
+from app.models.producto import Producto
+from app.models.proveedor import Proveedor
+from app.models.rol import Rol
+from app.models.usuario import Usuario
